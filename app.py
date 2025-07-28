@@ -30,8 +30,8 @@ st.set_page_config(page_title="Movie Recommender", layout="wide")
 st.title('🎬 Movie Recommender System')
 
 # Load saved data
-movies = pickle.load(open('movie_list.pkl', 'rb'))
-similarity = pickle.load(open('similarity.pkl', 'rb'))
+movies = pickle.load(open(model/'movie_list.pkl', 'rb'))
+similarity = pickle.load(open(model/'similarity.pkl', 'rb'))
 
 # Dropdown to select movie
 movie_list = movies['title'].values
